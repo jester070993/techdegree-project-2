@@ -30,6 +30,12 @@ body{
   max-width: 90%;
 }
 
+h1{
+	text-align: center;
+	letter-spacing: 5px;
+	font-weight: 900;
+	margin-bottom: 0;
+}
 
 
 
