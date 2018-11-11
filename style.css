@@ -16,6 +16,55 @@ html {
   /*MAKES  BASE FONT 10PX*/
 }
 
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+h1 {
+	margin: 0;
+	display: inline-block;
+	padding-bottom: 1rem;
+	text-decoration: underline;
+}
+
+nav li {
+	list-style: none;
+	display: block;
+	padding-top: 1rem;
+	padding-left: 2rem;
+	padding-right: 2rem;
+	padding-bottom: 1rem;
+
+}
+
+a {
+	text-decoration: none;
+}
+
+a {
+	color: inherit;
+}
+/*.nodisplay {
+	display: none;
+}
+
+.footerNav li {
+	display: block;
+	float: none;
+}
+
+
+.titleName{
+	float: none;
+}
+
+.navbarbottom {
+	float: none;
+}
+*/
+
 body{
 	font-family: 'Nunito', sans-serif;
 	font-size: 1rem;
@@ -32,7 +81,11 @@ body{
 
 }
 
-ul {
+li:hover {
+	background-color: lightgrey;
+}
+
+/*ul {
 	list-style: none;
 	text-align: center;
 	font-size: 2.5rem;
@@ -45,9 +98,7 @@ li {
 	padding: 1.4rem 0;
 }
 
-li:hover {
-	background-color: lightgrey;
-}
+
 
 #contact {
 	margin-bottom: 2rem;
@@ -87,20 +138,35 @@ h1{
 	font-weight: bold;
 	text-align: center;
 	margin-bottom:1.6rem;
+
 }
 
+li {
+	font-weight: bold;
+	font-family: 'Roboto Slab', serif;
 
+}
+
+h3 {
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+}
 
 .phone,
 .email {
 	font-weight: bold;
 	font-size: 1.2rem;
 	text-align: center;
-	margin-bottom: 2rem;
+	margin-bottom: 1rem;
+	padding-bottom: 1rem;
 	text-decoration: underline;
 
 }
 
+.phone{
+	padding-bottom: 0;
+}
 .contact {
 	margin-bottom: 2rem;
 	text-align: center;
@@ -108,15 +174,34 @@ h1{
 	font-weight: bold;
 	color: grey;
 background-color: #f2f2f2;
-padding: 1.6rem 0;
+
 
 }
 
-.contact-section {
-	margin-bottom: 2rem;
+*/
+img{
+	width: 100%;
+	height: auto;
 }
 
-hr {
+h1 {
+	display: block;
+	text-align: center;
+}
+
+ li {
+	display: block;
+	float: none;
+	text-align: center;
+}
+
+
+.aboutMe {
+	font-size: 1.5rem;
+}
+
+
+/*hr {
 	color: lightgrey;
 	margin: 1.6rem 0;
 }
@@ -124,16 +209,17 @@ hr {
 
 footer{
 /*	padding-top: 1.6rem;
-*/	text-align: center;
+*/	/*text-align: center;
 
-}
+}*/
 
-#footer {
+/*#footer {
 	padding-bottom: 1.6rem;
 }
 
 .back-to-top {
 	padding-bottom: 1.6rem;
+	font-size: 1rem;
 }
 
 h2 {
@@ -141,6 +227,8 @@ h2 {
 	color: #7c7c7c;
 	text-decoration: underline;
 	padding: 2rem 0;
+	font-family: 'Roboto Slab', serif;
+
 }
 
 p {
@@ -150,9 +238,7 @@ p {
 	color: grey;
 }
 
-a {
-	text-decoration: none;
-}
+
 
 a:visited {
 	color: black;
@@ -166,42 +252,389 @@ a {
 	width: 100%;
 	height: auto;
 }
-
+ */
 /*@media (min-width: 576px) {
   .container {
     max-width: 540px;
   }
 
-  p {
-  	color: blue;
-  }
 }*/
 
 @media (min-width: 768px) {
   .container {
-    max-width: 720px;
+    max-width: 70%;
   }
 
-  p {
-  	color: red;
+  .project  {
+	float: left;
+	width: 50%;
+}
+
+.aboutMe {
+	float: left;
+	width: 50%;
+}
+
+.myPic {
+	width: 50%;
+}
+
+h1 {
+	display: block;
+	text-align: center;
+}
+
+ul {
+	display: inline-block;
+}
+
+li {
+	float: left;
+}
+
+.center{
+	text-align: center;
+}
+
+
+/*navbar working*/
+/*  li{
+	display: inline-block;
+	background-color: inherit;
+	padding: 0 2rem;
+}*/
+/*navbar css ends*/
+
+
+
+/*.footerNav li {
+	display: inline-block;
+	float: none;
+}
+
+
+h3{
+	display: inline-block;
+	float: left;
+}
+
+.bottomNavigation {
+	display: inline-block;
+	float: left;
+	color: red;
+}
+
+.nodisplay {
+	display: block;
+}
+
+
+.myName{
+	float: none;
+	display: block;
+} 
+
+
+.portfolioRow{
+		float: right;
+		width: 50%;
+	}
+
+
+.portfolio::after {
+	clear:both;
+overflow:auto;
+padding-top : 20px;
+padding-left:5px;
+padding-right:5Px;
+}
+	
+	.portfolioRow1{
+		float: right;
+		width: 50%;
+	}
+
+		.row2{
+		float: left;
+		width: 50%;
+	}*/
+
+/*.bottom {
+	display: inline-block;
+}*/
+
+/*#home {
+	padding-bottom: 4rem;
+	padding-top: 0;
+}
+
+.bottom {
+		text-align: left;
+		font-size: 2rem;
+
+}
+
+#hidenav {
+  	display:none ;
   }
+	.title {
+		padding-top: 0;
+		padding-bottom: 2rem;
+	}
+
+  .navbar {
+  	background-color: #ededed;
+  	display: inline-block;
+  	padding: 1rem 1.5rem;
+  }
+
+  .profile-img {
+  	padding-left: 1rem;
+  }
+
+  #intro {
+  	padding-right: 1rem;
+  }
+
+  #bottom-nav {
+	display: block;
+}*/
+/*  .nodisplay {
+	display: block;
+}*/
+ 
+
+/*.theName {
+	display: inline;
+	float: left;
+}
+
+.bottomNavigation{
+	display: inline;
+	float: right;
+	padding-bottom: 2.6rem;
+}
+
+.finalWords {
+	padding: 0;
+	font-size: 2rem;
+	display: inline ;
+}
+
+ */ 
+
+
+.contactMe {
+	text-align: center;
+	font-size: 1.5rem;
+	padding: 1rem 0;
+	padding-top: 0;
+
+}
+
+.aboutMe {
+	margin: 3.5rem 0;
+	font-size: 2rem;
+}
+
+.email, .phone {
+	text-align: center;
+	text-decoration: underline;
+	font-size: 1.2rem;
+	letter-spacing: .3rem;
+}
+
+.phone {
+	padding-bottom: 1rem;
+
+}
+
+
+h3 {
+	text-align: center;
+	font-size: 2rem;
+	margin: 2rem 0;
+	text-decoration: underline;
+	font-weight: 900;
+}
+
+
 }
 
 @media (min-width: 992px) {
   .container {
     max-width: 70%;
   }
-  p {
-  	color: green;
-  }
+
+  .project  {
+	float: left;
+	width: 33.33%;
 }
+
+
+
+h1 {
+	float: left;
+	padding-bottom: 1rem;
+	padding-top: .5rem;
+}
+
+ul {
+	float: right;
+	display: inline;
+}
+
+/*h1 {
+	display: inline-block;
+	text-align: center;
+}
+
+ul {
+	display: inline;
+}
+
+h1 {
+	padding-top: 1rem;
+}*/
+/*navbar css at all media queries working fine*/
+/*  h1{
+	float: left;
+	display: inline-block;
+	padding-bottom: 0;
+}
+
+ul {
+	padding-top: 3.3rem;
+	float: right;
+	display: inline-block;
+}
+*/
+
+/*navbar css ends here - working completely */
+
+/*footer{
+	padding-bottom: 2rem;
+}
+.theName {
+	display: inline-block;
+	float: left;
+	padding-top: 0;
+
+}
+
+.clear{
+	clear: both ;
+}
+
+.bottomNavigation {
+	display: inline-block;
+	float: right;
+	padding-top: 0;
+}
+  .nodisplay {
+	display: block;
+}
+
+  .newnavbar{
+	text-align: right;
+	font-size: 1.6rem;
+  }
+  	.row2{
+		float: left;
+		width: 50%;
+	}
+
+    .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+	
+	.portfolioRow{
+		float: left;
+		width: 33.33%;
+	}
+.portfolioRow1{
+		float: right;
+		width: 50%;
+	}
+
+.centerPic,
+.profile-img,
+li {
+	text-align: center;
+}
+
+.row2{
+	width: 100%;
+		padding-bottom: 0;
+
+}
+
+.newnavbar {
+	position: absolute;
+	right: 30%;
+}
+
+
+.footerNav li{
+	display: inline-block;
+	background-color: none;
+}
+
+
+}
+.titleName {
+	float: left;
+	background-color: inherit;
+	display: inline-block;
+	color: green;
+}
+
+
+
+
+.navbarbottom {
+	float: right;
+}
+
+.top {
+	padding-bottom: 3rem;
+}
+
+.titleName {
+	font-size: 3rem;
+}
+
+.item {
+	font-size: 2rem;
+	
+}
+
+
+
+}
+.titleName {
+	float: left;
+	width: 100%;
+}
+.thetitle  {
+		float: left;
+
+}
+
+
+.movenav {
+	float: right;
+}*/
+
+}
+
 
 @media (min-width: 1200px) {
   .container {
     max-width: 70%;
   }
 
-  p {
-  	color: magenta;
-  }
+ 
 }

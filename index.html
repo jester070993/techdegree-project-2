@@ -9,59 +9,108 @@
 
 	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
 
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+
+
 	<link rel="stylesheet" href="normalize.css">
 
 	<link rel="stylesheet" href="style.css">
 
+
 </head>
 	<body>
 		<div  class="container" >
-		<header>
-		<h1 id="home">Jesse Dispoto</h1>
-			<ul>
-				<li><a>Home</a></li>
-				<li><a href="#Portfolio">Portfolio</a></li>
-				<li id="contact"><a href="#contactMe">Contact</a></li>
+		<header class="clearfix">
+
+			<!-- navbar at all media queries working below -->
+
+			
+		<h1> Jesse Dispoto</h1>
+
+
+		<nav>
+			<div class="center">
+			<ul class="clearfix">
+				<li ><a href="#">Home</a></li>
+				<li ><a href="#Portfolio">Portfolio</a></li>
+				<li ><a href="#contactMe">Contact</a></li>
 			</ul>
+		</div>
+
+		</nav>
+
+
+
+
+		<!-- navbar at all media queries working above -->
+
+
+
 		</header>
 
 		
 		<section>
-			<div class="profile-img"> 
-				<img  class="profile" src="images/responsive-layout-profile.png">
-			</div>
-			<p id="intro">
+			<div class="clearfix">
+		<img class="myPic" src="images/responsive-layout-profile.png">
+		<p class="aboutMe">
 				Hello! I am an aspiring front-end developer currently working towards my goal of landing a junior developer position. Specifically, I have a strong interest in user design and hope to segway my way into that field eventually.
 			</p>
-			<ul>
+
+		</div>
+
+
+		<!-- 	<ul>
 				<li><a id="Portfolio">Portfolio</a></li>
 			</ul>
-			<img src="images/Portfolio-1.png" class="project">
-			<h2> Marketing Page </h2>
-			<p> This project shows the front page of a marketing website meant for a specific business I am interested in! </p>
-			<img src="images/Portfolio-2.png" class="project">
-			<h2> Search Page </h2>
-			<p> This project searches through a specific databse to find information that the user is trying to look up </p>
-			<img src="images/Portfolio-3.png" class="project">
-			<h2>Travel App</h2>
-			<p>This project compares travel times based on different trasportation methods and tells you the best one.
-			</p>
-			<img src="images/Portfolio-4.png" class="project">
-			<h2>Map of Favorite Spots </h2>
+			<div class="portfolio">
+		<div class="row"> -->
+			<h3> Projects </h3>
+		<div class="clearfix">
+
+			<div class="project">
+				<img src="images/Portfolio-1.png">
+				<h2> Marketing Page </h2>
+				<p> This project shows the front page of a marketing website meant for a specific business I am interested in! </p>
+			</div>
+			
+			<div class="project">
+				<img src="images/Portfolio-2.png">
+				<h2> Search Page </h2>
+				<p> This project searches through a specific databse to find information that the user is trying to look up </p>
+			</div>
+			
+		<div class="project">
+			<img src="images/Portfolio-3.png">
+			<h2 >Travel App</h2>
+			<p>This project compares travel times based on different trasportation methods and tells you the best one.</p>
+		</div>
+
+		<div class="project">
+			<img src="images/Portfolio-4.png">
+			<h2 >Map of Favorite Spots </h2>
 			<p>This project uses mapping APIs to plot point to my favorite spots in teh city for a do-it-youself walking tour.</p>
-			<img src="images/Portfolio-5.png" class="project">
+		</div>
+
+		<div class="project">
+			<img src="images/Portfolio-5.png" >
 			<h2>Photo Gallery </h2>
 			<p> This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos</p>
-			<img src="images/Portfolio-6.png" class="project">
-			<h2> Calculator </h2>
-				<p> Someone can enter in numbers they want and press the big blue button to get results</p>
+		</div>
 
-			<ul>
-				<li class="contact-section"><a>Contact</a></li>
-			</ul>
-			<div class="contact" id="contactMe">
-			<p >
-				If you are interested in chatting with me or have questions regarding my experience, please don't hesitate
+		<div class="project">
+			<img src="images/Portfolio-6.png">
+			<h2> Calculator </h2>
+			<p> Someone can enter in numbers they want and press the big blue button to get results</p>
+		</div>
+
+		</div>
+
+
+
+
+
+	<h3> Contact</h3>
+			<p class="contactMe">	If you are interested in chatting with me or have questions regarding my experience, please don't hesitate
 				to contact me.  
 			</p>
 			<br>
@@ -72,10 +121,50 @@
 
 
 		</section>
+
+
 		<footer>
-			<p id="footer"> Jesse Dispoto &copy; 2018 </p>
-			<p class="back-to-top"><a href="#home">Back to top</a></p>
-		</footer>
+<!-- 			<p id="footer"> Jesse Dispoto &copy; 2018 </p>
+ --><!-- <p class="back-to-top" id="hidenav"><a href="#home">Back to top</a></p>
+
+
+			
+<!-- 			<h1 id="home" class="bottom"><a href="#">Jesse Dispoto</a></h1>
+ -->		
+				<!-- <ul class="footerNav">
+				<li id="myName"> Jesse Dispoto</li>
+				<li class="navbar navbarbottom"><a href="#">Contact</a></li>
+				<li class="navbar navbarbottom"><a href="#Portfolio">Portfolio</a></li>
+				<li class="navbar navbarbottom" id="contact"><a href="#contactMe">Home</a></li>
+			</ul> -->
+		<!-- <div class="nodisplay">
+		<h3 class="myName"> Jesse Dispoto</h3>
+			<ul class="bottomNavigation">
+				<li><a href="#">Home</a></li>
+				<li><a href="#Portfolio">Portfolio</a></li>
+				<li><a href="#contactMe">Contact</a></li>
+			</ul>
 	</div>
+		<p id="footer"> Jesse Dispoto &copy; 2018 </p>
+ -->
+
+ 		<!-- <div class="nodisplay">
+		<div class="theName">
+ 		<h4 class="finalWords"> Jesse Dispoto </h4>
+ 	</div>
+ 	 		 <div class="clear"></div>
+
+
+ 		<ul class="bottomNavigation">
+				<li><a href="#">Home</a></li>
+				<li><a href="#Portfolio">Portfolio</a></li>
+				<li><a href="#contactMe">Contact</a></li>
+			</ul>
+
+
+ 		 <div class="clear"></div>
+ 		</div>
+
+		</footer> --> -->
 </body>
 </html>
