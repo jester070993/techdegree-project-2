@@ -22,6 +22,8 @@ html {
     display: table;
 }
 
+
+
 .myPic{
 	  padding: 0.25rem;
   background-color: #fff;
@@ -273,7 +275,7 @@ img{
 
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1024px) {
   .container {
     max-width: 70%;
   }
@@ -306,10 +308,10 @@ ul {
 }
 
 
-@media (min-width: 1200px) {
+/*@media (min-width: 1200px) {
   .container {
     max-width: 70%;
   }
 
  
-}
+}*/
